@@ -148,6 +148,12 @@ app.put('/api/users/:id', async(req,res)=>{ // Actualizar usuario
     }
 })
 
+// -------------------- Login ----------------
+
+app.get("/api/login",async(req,res)=>{
+    res.statusCode(200);
+})
+
 
 const puerto = process.env.PORT || 3000
 app.listen(puerto,()=>{
